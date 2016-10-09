@@ -184,7 +184,7 @@ input {
   background-color: #e6e7e8;
   font-size:10px;
   font-weight:bold;
-  color:#000000;
+  color:#000000; 
   text-align:left;
 }
 
@@ -199,4 +199,13 @@ input {
 .simpletablestyle td a:hover {
   color:#3883ce;
   text-decoration:none; 
+}
+
+.row{
+	padding-top: 3px !important;
+	padding-bottom: 3px !important;
+}
+
+.content{
+	width: 95% !important;
 }
