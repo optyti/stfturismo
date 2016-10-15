@@ -36,6 +36,13 @@ public interface IBaseFacade <T extends BaseEntity> extends Serializable {
 	/**
 	 * 
 	 * @param entity
+	 * @return
+	 */
+	T merge(T entity);
+	
+	/**
+	 * 
+	 * @param entity
 	 */
 	void delete(T entity);
 

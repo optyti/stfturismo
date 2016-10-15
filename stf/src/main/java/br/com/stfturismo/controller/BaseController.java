@@ -1,5 +1,6 @@
 package br.com.stfturismo.controller;
 
+import java.util.List;
 import java.util.logging.Logger;
 
 import javax.enterprise.inject.Model;
@@ -8,7 +9,9 @@ import javax.faces.context.FacesContext;
 import javax.inject.Inject;
 
 import org.primefaces.event.ToggleEvent;
+import org.primefaces.util.CollectionUtils;
 
+import br.com.stfturismo.model.EntidadeBase;
 import br.com.stfturismo.util.MensagensUtils;
 
 @Model
@@ -27,8 +30,8 @@ public class BaseController {
 		return "/pages/index.xhtml";
 	}
 
-	// public boolean verificaExistenciaItensAlterados(SgiEntidadeBase atual,
-	// SgiEntidadeBase apos)
+	// public boolean verificaExistenciaItensAlterados(EntidadeBase atual,
+	// EntidadeBase apos)
 	// throws CompareException {
 	//
 	// List<Difference> diffs = null;
